@@ -1,0 +1,237 @@
+\hypertarget{class_vending_machine_1_1_beverage_action}{}\section{Vending\+Machine.\+Beverage\+Action 클래스 참조}
+\label{class_vending_machine_1_1_beverage_action}\index{Vending\+Machine.\+Beverage\+Action@{Vending\+Machine.\+Beverage\+Action}}
+
+
+음료수에 대한 액션이 구현되어 있는 클래스  
+
+
+
+
+Vending\+Machine.\+Beverage\+Action에 대한 협력 다이어그램\+:
+% FIG 0
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vending_machine_1_1_beverage_action_a676b3cd342699f9554ffab80d0783e9d}{Beverage\+Action} (\hyperlink{class_vending_machine_1_1_machine_u_i}{Machine\+UI} f)
+\item 
+boolean \hyperlink{class_vending_machine_1_1_beverage_action_a2873745e33c3ab5248812d4a8dc01e3f}{give\+Beverage} (int id, int currentmoney)
+\item 
+void \hyperlink{class_vending_machine_1_1_beverage_action_a22235582a7aa3f1f6797634484617dfd}{input\+Beverages} (int \hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke}, int \hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider}, int \hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta}, int \hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice}, int \hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice}, int \hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee})
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke} = null
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider} = null
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta} = null
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice} = null
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice} = null
+\item 
+\hyperlink{class_vending_machine_1_1_product}{Product} \hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+음료수에 대한 액션이 구현되어 있는 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/04-\/09 
+\end{DoxyDate}
+
+
+Beverage\+Action.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!Beverage\+Action@{Beverage\+Action}}
+\index{Beverage\+Action@{Beverage\+Action}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{Beverage\+Action(\+Machine\+U\+I f)}{BeverageAction(MachineUI f)}}]{\setlength{\rightskip}{0pt plus 5cm}Vending\+Machine.\+Beverage\+Action.\+Beverage\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Machine\+UI}}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_beverage_action_a676b3cd342699f9554ffab80d0783e9d}{}\label{class_vending_machine_1_1_beverage_action_a676b3cd342699f9554ffab80d0783e9d}
+
+\begin{DoxyParams}{매개변수}
+{\em f} & 알림창을 중앙에 띄우기 위해 \hyperlink{class_vending_machine_1_1_machine_u_i}{Machine\+UI} 인스턴스를 불러옴 \\
+\hline
+\end{DoxyParams}
+
+
+Beverage\+Action.\+java 파일의 33 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+33                                       \{
+34         \hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"콜라"}, 800, 0, 10);
+35         \hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"사이다"}, 700, 0, 10);
+36         \hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"환타"}, 900, 0, 10);
+37         \hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"오렌지 주스"}, 850, 0, 10);
+38         \hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"포도 주스"}, 850, 0, 10);
+39         \hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee} = \textcolor{keyword}{new} Product(\textcolor{stringliteral}{"커피"}, 900, 0, 10);
+40         
+41         IDnProduct = \textcolor{keyword}{new} HashMap();
+42         
+43         IDnProduct.put(0, \hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke});  \textcolor{comment}{// 0: 콜라, 1: 사이다, 2: 환타, 3: 오렌지주스, 4: 포도주스, 5: 커피}
+44         IDnProduct.put(1, \hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider});
+45         IDnProduct.put(2, \hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta});
+46         IDnProduct.put(3, \hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice});
+47         IDnProduct.put(4, \hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice});
+48         IDnProduct.put(5, \hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee});
+49         
+50         this.mainFrame = f;
+51     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!give\+Beverage@{give\+Beverage}}
+\index{give\+Beverage@{give\+Beverage}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{give\+Beverage(int id, int currentmoney)}{giveBeverage(int id, int currentmoney)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Vending\+Machine.\+Beverage\+Action.\+give\+Beverage (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{currentmoney}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_beverage_action_a2873745e33c3ab5248812d4a8dc01e3f}{}\label{class_vending_machine_1_1_beverage_action_a2873745e33c3ab5248812d4a8dc01e3f}
+
+\begin{DoxyParams}{매개변수}
+{\em id} & I\+Dn\+Product의 key \\
+\hline
+{\em currentmoney} & 자판기에 넣은 돈을 의미 \\
+\hline
+\end{DoxyParams}
+
+
+Beverage\+Action.\+java 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+58                                                          \{
+59         \textcolor{keywordflow}{if}(IDnProduct.get(\textcolor{keywordtype}{id}).getPrice() > currentmoney)\{  \textcolor{comment}{// 지정된 가격보다 현금이 부족한 경우}
+60             JOptionPane.showMessageDialog(mainFrame, \textcolor{stringliteral}{"현금이 부족합니다."}, \textcolor{stringliteral}{"Notice"}, 
+61                     JOptionPane.INFORMATION\_MESSAGE);
+62             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+63         \}
+64         
+65         \textcolor{keywordflow}{if}(IDnProduct.get(\textcolor{keywordtype}{id}).getStock() <= 0)\{  \textcolor{comment}{// 선택한 음료수가 재고가 없는 경우}
+66             JOptionPane.showMessageDialog(mainFrame, \textcolor{stringliteral}{"죄송합니다. 재고가 없습니다."}, \textcolor{stringliteral}{"Notice"}, 
+67                     JOptionPane.INFORMATION\_MESSAGE);
+68             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+69         \}
+70         
+71         \textcolor{comment}{// 음료수를 하나 주고 purchased 값과 stock 값을 조절함}
+72         JOptionPane.showMessageDialog(mainFrame, \textcolor{stringliteral}{"여기 "} + IDnProduct.get(\textcolor{keywordtype}{id}).getName() + \textcolor{stringliteral}{" 있습니다. 좋은 하루 되세요."}
+      , \textcolor{stringliteral}{"Notice"}, 
+73                 JOptionPane.INFORMATION\_MESSAGE);
+74         IDnProduct.get(\textcolor{keywordtype}{id}).setPurchased( IDnProduct.get(\textcolor{keywordtype}{id}).getPurchased() + 1 );
+75         IDnProduct.get(\textcolor{keywordtype}{id}).setStock( IDnProduct.get(\textcolor{keywordtype}{id}).getStock() - 1 );   
+76         
+77         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+78     \}
+\end{DoxyCode}
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!input\+Beverages@{input\+Beverages}}
+\index{input\+Beverages@{input\+Beverages}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{input\+Beverages(int coke, int cider, int fanta, int orangejuice, int grapejuice, int coffee)}{inputBeverages(int coke, int cider, int fanta, int orangejuice, int grapejuice, int coffee)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vending\+Machine.\+Beverage\+Action.\+input\+Beverages (
+\begin{DoxyParamCaption}
+\item[{int}]{coke, }
+\item[{int}]{cider, }
+\item[{int}]{fanta, }
+\item[{int}]{orangejuice, }
+\item[{int}]{grapejuice, }
+\item[{int}]{coffee}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vending_machine_1_1_beverage_action_a22235582a7aa3f1f6797634484617dfd}{}\label{class_vending_machine_1_1_beverage_action_a22235582a7aa3f1f6797634484617dfd}
+
+\begin{DoxyParams}{매개변수}
+{\em coke} & 추가하려는 콜라의 갯수 \\
+\hline
+{\em cider} & 추가하려는 사이다의 갯수 \\
+\hline
+{\em fanta} & 추가하려는 환타의 갯수 \\
+\hline
+{\em orangejuice} & 추가하려는 오렌지 주스의 갯수 \\
+\hline
+{\em grapejuice} & 추가하려는 포도 주스의 갯수 \\
+\hline
+{\em coffee} & 추가하려는 커피의 갯수 \\
+\hline
+\end{DoxyParams}
+
+
+Beverage\+Action.\+java 파일의 89 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+89                                                                                                            
+      \{
+90         this.\hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke}.\hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + \hyperlink{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{coke});
+91         this.\hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider}.\hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + 
+      \hyperlink{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{cider});
+92         this.\hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta}.\hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + 
+      \hyperlink{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{fanta});
+93         this.\hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice}.
+      \hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + \hyperlink{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{orangejuice});
+94         this.\hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice}.
+      \hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + \hyperlink{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{grapejuice});
+95         this.\hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee}.\hyperlink{class_vending_machine_1_1_product_a3dbc99dd95931da6005a844dd8d688d4}{setStock}(this.\hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee}.\hyperlink{class_vending_machine_1_1_product_a93a153b9a1134def6c22ff12b8c82f31}{getStock}() + 
+      \hyperlink{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{coffee});
+96         \textcolor{comment}{// 음료수를 지정한 수만큼 추가함}
+97     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!cider@{cider}}
+\index{cider@{cider}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{cider}{cider}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+cider = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}{}\label{class_vending_machine_1_1_beverage_action_a7d3d1173a06502e63ec77d8297f7eaca}
+
+
+Beverage\+Action.\+java 파일의 22 번째 라인에서 정의되었습니다.
+
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!coffee@{coffee}}
+\index{coffee@{coffee}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{coffee}{coffee}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+coffee = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}{}\label{class_vending_machine_1_1_beverage_action_aa109f67c225357d2ab44e3b1cb6be6e8}
+
+
+Beverage\+Action.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!coke@{coke}}
+\index{coke@{coke}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{coke}{coke}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+coke = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}{}\label{class_vending_machine_1_1_beverage_action_a3ccaf8736a20aea9cc84aa5c525fca35}
+
+
+Beverage\+Action.\+java 파일의 21 번째 라인에서 정의되었습니다.
+
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!fanta@{fanta}}
+\index{fanta@{fanta}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{fanta}{fanta}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+fanta = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}{}\label{class_vending_machine_1_1_beverage_action_a49ca1e1fc03f8d685e11e66734e3a29e}
+
+
+Beverage\+Action.\+java 파일의 23 번째 라인에서 정의되었습니다.
+
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!grapejuice@{grapejuice}}
+\index{grapejuice@{grapejuice}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{grapejuice}{grapejuice}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+grapejuice = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}{}\label{class_vending_machine_1_1_beverage_action_ad57bdbeb988807b0fb47fd148352930c}
+
+
+Beverage\+Action.\+java 파일의 25 번째 라인에서 정의되었습니다.
+
+\index{Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}!orangejuice@{orangejuice}}
+\index{orangejuice@{orangejuice}!Vending\+Machine\+::\+Beverage\+Action@{Vending\+Machine\+::\+Beverage\+Action}}
+\subsubsection[{\texorpdfstring{orangejuice}{orangejuice}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product} Vending\+Machine.\+Beverage\+Action.\+orangejuice = null\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}{}\label{class_vending_machine_1_1_beverage_action_aecab78a26d86ba8dd679e5dda12ccc89}
+
+
+Beverage\+Action.\+java 파일의 24 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Vending\+Machine (\+Report\#1)/src/\+Vending\+Machine/\hyperlink{_beverage_action_8java}{Beverage\+Action.\+java}\end{DoxyCompactItemize}

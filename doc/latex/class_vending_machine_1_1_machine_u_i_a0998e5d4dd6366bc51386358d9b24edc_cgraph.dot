@@ -1,0 +1,20 @@
+digraph "VendingMachine.MachineUI.initialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VendingMachine.MachineUI.initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="VendingMachine.BeverageAction.give\lBeverage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_beverage_action.html#a2873745e33c3ab5248812d4a8dc01e3f"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="VendingMachine.Change.return\lCharges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_change.html#af8f68fb27a3560f4972cc498b914d2c3"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="VendingMachine.MachineUI.\lInputMoney",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_machine_u_i.html#ab1450eb783629d05001682ac0c8c30e0"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="VendingMachine.MachineUI.is\lNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_machine_u_i.html#a7f5aa2e1b49c150c3b479b7e5123cf25"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="VendingMachine.Change.input\lCharges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_change.html#a47e92d2372d5b1f2a3e948ee4f55d884"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="VendingMachine.BeverageAction.input\lBeverages",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_beverage_action.html#a22235582a7aa3f1f6797634484617dfd"];
+}

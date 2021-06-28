@@ -1,0 +1,7 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VendingMachine.Change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_change.html",tooltip="잔돈에 대한 액션이 구현되어 있는 클래스 "];
+}

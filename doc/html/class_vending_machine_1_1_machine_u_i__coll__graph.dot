@@ -1,0 +1,29 @@
+digraph "VendingMachine.MachineUI"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{VendingMachine.MachineUI\n|- currentMoney\l- cokeprice\l- ciderprice\l- fantaprice\l- orangeaprice\l- coffeeprice\l- cokenumber\l- coffeenumber\l- c500number\l- moneylabel\l|+ MachineUI()\l+ InputMoney()\l+ isNumber()\l+ getCurrentMoney()\l+ setCurrentMoney()\l- initialize()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{JFrame\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -returnButton\n-coffeeButton\n-orangeButton\n-inputCoinButton\n-ciderButton\n-cokeButton\n-fantaButton\n-inputChargeButton\n-grapeButton\n-inputBeverageButton\n..." ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{JButton\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -thisClass" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -grapeprice\n-orangenumber\n-cidernumber\n-c10number\n-c100number\n-c1000number\n-logo\n-fantanumber\n-c50number\n-grapenumber\n..." ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{JLabel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -mainContent" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{JPanel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -ba" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{VendingMachine.BeverageAction\n||+ BeverageAction()\l+ giveBeverage()\l+ inputBeverages()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_beverage_action.html",tooltip="음료수에 대한 액션이 구현되어 있는 클래스 "];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" -fanta\n-coke\n-orangejuice\n-grapejuice\n-cider\n-coffee" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{VendingMachine.Product\n|- name\l- price\l- numOfPurchased\l- numOfStock\l|+ Product()\l+ getName()\l+ setName()\l+ getPrice()\l+ setPrice()\l+ getPurchased()\l+ setPurchased()\l+ getStock()\l+ setStock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_product.html",tooltip="Beverage Class. "];
+  Node1 -> Node6 [color="grey25",fontsize="10",style="solid",label=" ~mainFrame" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 -> Node6 [color="grey25",fontsize="10",style="solid",label=" ~IDnProduct" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{HashMap\< Integer, Vending\lMachine.Product \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -cg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{VendingMachine.Change\n||+ Change()\l+ returnCharges()\l+ inputCharges()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_change.html",tooltip="잔돈에 대한 액션이 구현되어 있는 클래스 "];
+  Node10 -> Node9 [color="grey25",fontsize="10",style="solid",label=" -c1000\n-c10\n-c100\n-c50\n-c500" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{VendingMachine.Coin\n|- type\l- number\l|+ Coin()\l+ getType()\l+ setType()\l+ getNumber()\l+ setNumber()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vending_machine_1_1_coin.html",tooltip="Coin Class. "];
+  Node1 -> Node9 [color="grey25",fontsize="10",style="solid",label=" ~mainFrame" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 -> Node9 [color="grey25",fontsize="10",style="solid",label=" ~Coins" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{HashMap\< Integer, Vending\lMachine.Coin \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
